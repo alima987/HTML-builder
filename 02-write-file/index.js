@@ -1,7 +1,9 @@
 const fs = require('fs');
 const readline = require('readline');
+
 const fileStream = fs.createWriteStream('input.txt', { flags: 'a' });
 console.log('Введите текст. Для выхода введите "exit" или нажмите Ctrl + C\n');
+
 const rl = readline.createInterface({
 input: process.stdin,
 output: process.stdout,
