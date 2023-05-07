@@ -19,7 +19,7 @@ fs.readdir(folderPath, (err, files) => {
       }
 
       if (stats.isFile()) {
-        console.log(`${file} - ${stats.size} bytes`);
+        console.log(`${file.split('.')[0]} - ${file.split('.')[1]} - ${stats.size} bytes`);
       }
     });
   });
